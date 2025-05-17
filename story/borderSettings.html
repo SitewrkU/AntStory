@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Налаштування Діалогів</title>
+</head>
+<body>
+    <div class="switch-container">
+    <h1>Нові діалоги [BETA]</h1>
+    <label class="switch">
+        <input type="checkbox" id="toggleCharacters" />
+        <span class="slider"></span>
+    </label>
+    </div>
+    <p class="settings-info">Увага! Це експериментальна функція, яка з’явилася зовсім нещодавно. Увімкнувши "Нові діалоги", ви зможете читати текст із кольоровими позначками біля реплік персонажів. Це може полегшити сприйняття та зробити читання приємнішим.</p>
+    <div id="poem-exmpl">
+        <h2 style="text-align: center;">Приклад:</h2>
+        <div class="exmpls">
+        <p class="d-main">&gt; Вітання!</p>
+        <p class="d-red">Шая - Які 5 мінуточок, я вам що мама?</p>
+        <p class="d-bl">Скайлар - Цукор набрав, цукор висипав... </p>
+        <p class="d-gr">Вихор - Я бачив наші мурахи, на бджолу хотіли напасти. Я таке не підтримую.</p>
+        <p class="d-pr">Міраж - Один наший.. так скажемо учоний, в говні мочоний..</p>
+        <p class="d-orn">Мондо - Мг… подруга значить…</p>
+        <p class="d-def">Мураха - Не, ну ти зрозумів? Ти зрозумів?</p>
+        <p class="d-def">Логісор - Ну тільки якщо за символічну плату</p>
+        <p class="d-drk">??? - ...</p>
+        </div>
+    </div>
+
+    <p class="settings-info" style="text-align: center;">Наразі кольорові позначки доступні не для всіх персонажів. Якщо у персонажа немає власного кольору, він має або сіру позначку, або не має її взагалі. Ця функція ще допрацьовується, тому вона може містити недоліки та помилки.</p>
+
+    <script>
+        const toggle = document.getElementById('toggleCharacters');
+        const saved = localStorage.getItem('useCharacterStyles');
+        toggle.checked = saved === 'true';
+
+        toggle.addEventListener('change', () => {
+            localStorage.setItem('useCharacterStyles', toggle.checked ? 'true' : 'false');
+        });
+    </script>
+</body>
+</html>

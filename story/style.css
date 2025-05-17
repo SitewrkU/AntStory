@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select:none;
+    user-select: none;
+}
+body{
+    background-color: #212121;
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    color: white;
+}
+
+header{
+    padding: 5px;
+    position: sticky;
+    z-index:1000;
+    top: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.603);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+}
+
+.home{
+    color: white;
+    margin-left: auto;
+    font-size: 26px;
+    transition: all 0.2s ease-in-out;
+}
+.home:hover{
+    transform: scale(1.2);
+}
+
+
+#poem{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00000050;
+    white-space: pre-line;
+    color: #f3f3f3;
+    font-size: 22px;
+    margin: 10px 15px;
+    line-height: 1.6;
+}
+
+
+
+
+.settings-info{
+    border: 2px solid #ffff0013;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 0, 0.055);
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    color: #f3f3f3;
+    font-size: 22px;
+}
+.switch-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.switch-container > h1{
+    margin-right: 20px;
+}
+.switch {
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 26px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 6px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 30%;
+}
+.switch input:checked + .slider {
+    background-color: #4caf50;  
+}
+.switch input:checked + .slider:before {
+    transform: translateX(24px);
+}
+.switch:hover .slider {
+    box-shadow: 0 0 5px #4caf50aa;
+}
+
+
+#poem-exmpl{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00000050;
+    color: #f3f3f3;
+    font-size: 22px;
+    margin: 30px 15px;
+    line-height: 1.6;
+}
+
+.exmpls{
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.d-def{
+    border-left: 3px solid #8a8a8a;
+    padding-left: 4px;
+}
+.d-main{
+    border-left: 3px solid #dfd5d5;
+    padding-left: 4px;
+}
+.d-red{
+    border-left: 3px solid #9c5d5d;
+    padding-left: 4px;
+}
+.d-bl{
+    border-left: 3px solid #5f8d8f;
+    padding-left: 4px;
+}
+.d-gr{
+    border-left: 3px solid #5c9254;
+    padding-left: 4px;
+}
+.d-pr{
+    border-left: 3px solid #3b135e;
+    padding-left: 4px;
+}
+.d-orn{
+    border-left: 3px solid #8b4719;
+    padding-left: 4px;
+}
+.d-drk{
+    border-left: 3px solid #20030a;
+    padding-left: 4px;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    h1{
+        font-size: 24px;
+    }
+    #poem{
+        font-size: 19px;
+    }
+    .switch-container{
+        flex-direction: column;
+    }
+    .settings-info{
+        margin: 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 380px) {
+    #poem{
+        font-size: 17px;
+    }
+}
