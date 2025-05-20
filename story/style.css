@@ -52,6 +52,36 @@ header{
     line-height: 1.6;
 }
 
+.next-day{
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+}
+.next-day > button{
+    cursor: pointer;
+    padding: 10px 10px;
+    background: none;
+    border-radius: 5px;
+    border: 3px solid #1365a8;
+    color: #1673c0;
+    box-shadow: 0 2px 12px #2195f34b;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+.next-day > button > i::before{
+    margin: 0;
+    margin-left: 5px;
+}
+.next-day > button:hover {
+    scale: 1.02;
+    border: 3px solid #2196f3;
+    color: #239cff;
+    box-shadow: 0 2px 12px #2195f37c;
+}
+.next-day > button:active {
+    transform: scale(0.9);
+}
 
 
 

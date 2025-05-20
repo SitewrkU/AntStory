@@ -51,3 +51,19 @@ if (!text) {
 
     renderPoem();
 }
+
+
+
+function goToNextDay() {
+  const current = window.location.pathname;
+  const match = current.match(/day(\d+)\.html/);
+  
+  if (match) {
+    const currentDay = parseInt(match[1]);
+    const nextDay = currentDay + 1;
+    const nextUrl = `day${nextDay}.html`;
+    window.location.href = nextUrl;
+  } else {
+    console.error("Не вдалося визначити номер сторінки 🥲");
+  }
+}
