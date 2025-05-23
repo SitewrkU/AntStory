@@ -37,6 +37,8 @@ if (!text) {
                 return `<span class="d-pr">${line}</span>`;
             } else if (useStyles && trimmed.startsWith('Мондо -')) {
                 return `<span class="d-orn">${line}</span>`;
+            } else if (useStyles && trimmed.startsWith('Астра -')) {
+                return `<span class="d-pnk">${line}</span>`;
             } else if (useStyles && trimmed.startsWith('??? -')) {
                 return `<span class="d-drk">${line}</span>`;
             } else if (useStyles && /^([\p{L}']+\s*){1,2}-\s+/u.test(trimmed)) {

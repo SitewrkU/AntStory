@@ -170,7 +170,7 @@ header{
     padding-left: 4px;
 }
 .d-red{
-    border-left: 3px solid #9c5d5d;
+    border-left: 3px solid #b95151;
     padding-left: 4px;
 }
 .d-bl{
@@ -191,6 +191,10 @@ header{
 }
 .d-drk{
     border-left: 3px solid #20030a;
+    padding-left: 4px;
+}
+.d-pnk{
+    border-left: 3px solid #df778f;
     padding-left: 4px;
 }
 
