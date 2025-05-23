@@ -7,10 +7,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../../favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Налаштування Діалогів</title>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="borders.css">
+    <link rel="stylesheet" href="../styles/fontello.css">
+    <title>Налаштування</title>
 </head>
 <body>
+    <header>
+        <h1>Налаштування</h1>
+        <a class="home" href="../../index.html"><i class="icon-home"></i></a>
+    </header>
+
+    <div class="container">
     <div class="switch-container">
     <h1>Нові діалоги [BETA]</h1>
     <label class="switch">
@@ -34,8 +42,44 @@
         <p class="d-drk">??? - ...</p>
         </div>
     </div>
-
     <p class="settings-info" style="text-align: center;">Наразі кольорові позначки доступні не для всіх персонажів. Якщо у персонажа немає власного кольору, він має або сіру позначку, або не має її взагалі. Ця функція ще допрацьовується, тому вона може містити недоліки та помилки.</p>
+    </div>
+
+
+    <div class="container">
+        <h1 style="text-align: center;">Коментарі розробника</h1>
+        <div class="coments">
+            <div class="coment">
+                <div class="version">[2.2.1]</div>
+                <p>Чутка переробив меню "Налаштування" та трохи впорядкував код. Так як новин не багато вот вам факти з 1.0: <br>Ф.Факт з дня 7: Той інший вид мурах розмовляє ламаною англійською + Чому Спектр і Шая не зайшли в колонію через секретний хід, якщо основний засипало?<br>Додав прикольний перехід в коментарі. Ті, що зелені - найновіші</p>
+            </div>
+            <div class="coment">
+                <div class="version">[2.2]</div>
+                <p>Одним словом я не добавлю світлу тему - мені лінь. Та і я вже пробував. Виглядало не дуже, але можливо це проблема не в темі а в мні. Думаю над тим щоб добавити більше унікальних кольорів персам</p>
+            </div>
+            <div class="coment">
+                <div class="version">[2.2]</div>
+                <p>13-ий День вже тут! Приємного читання, Чи буде 14-ий? <br>Бонус: Мені тепер подобається Астра</p>
+            </div>
+            <div class="coment">
+                <div class="version">[2.1.5]</div>
+                <p>Добавив функцію наступного дня. До кого не дойшло - це кнопка в кінці кожного дня(Окрім останнього), яка перекидує на наступний день. Дизайн мені подобається. Додатко: Виправив невеликі баги</p>
+            </div>
+            <div class="coment">
+                <div class="version">[2.1.2]</div>
+                <p>Виправив баг з backdrop фільтром в header. Суть бага в тому, що на телефонах сторінка любого дня прокручувалась так, ніби цей скрол заіржавів 10 років тому. Пофіксив це просто прибравши блюр на телефонах. <br>Бонус: Мені подобається Вихор</p>
+            </div>
+            <div class="coment">
+                <div class="version">[2.1]</div>
+                <p>Міні багофікс цих нових діалогів. Як на мене штука прикольна, але получається запар з кольорами. Використовуйте на свій смак, та і по дефолту воно виключене. <br>PS: Я вообще читаю чистий текст навіть без затемненого "*"/: Може добавити можливість вирубити і це? Ну, для істинних любителів (Типу мене).</p>
+            </div>
+            <div class="coment">
+                <div class="version">[2.0]</div>
+                <p>Вітання! Новий сайт на місці! Разом з ним я переписав всі дні з 1 по 12 (Просто "причесав", не міняючи головного сюжету)</p>
+            </div>
+        </div>
+    </div>
+
 
     <script>
         const toggle = document.getElementById('toggleCharacters');

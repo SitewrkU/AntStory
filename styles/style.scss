@@ -146,7 +146,7 @@ header{
                     height: 100%;
                     background-color: #1c791c;
                     z-index: -1;
-                    transition: width 0.2s ease-in-out;
+                    transition: width 0.4s ease-in-out;
                 }
                 &:hover::before {
                     width: 100%;

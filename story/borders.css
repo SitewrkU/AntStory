@@ -1,0 +1,36 @@
+.d-def{
+    border-left: 3px solid #8a8a8a;
+    padding-left: 4px;
+}
+.d-main{
+    border-left: 3px solid #dfd5d5;
+    padding-left: 4px;
+}
+.d-red{
+    border-left: 3px solid #b95151;
+    padding-left: 4px;
+}
+.d-bl{
+    border-left: 3px solid #5f8d8f;
+    padding-left: 4px;
+}
+.d-gr{
+    border-left: 3px solid #5c9254;
+    padding-left: 4px;
+}
+.d-pr{
+    border-left: 3px solid #3b135e;
+    padding-left: 4px;
+}
+.d-orn{
+    border-left: 3px solid #8b4719;
+    padding-left: 4px;
+}
+.d-drk{
+    border-left: 3px solid #20030a;
+    padding-left: 4px;
+}
+.d-pnk{
+    border-left: 3px solid #df778f;
+    padding-left: 4px;
+}
