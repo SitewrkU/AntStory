@@ -84,6 +84,11 @@ header{
 }
 
 
+@media (min-width: 1600px) {
+    #poem{
+        font-size: 28px;
+    }
+}
 @media (max-width: 768px) {
     header{
         backdrop-filter:none;

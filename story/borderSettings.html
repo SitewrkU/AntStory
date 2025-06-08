@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Roboto&family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../../favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="settings.css">
     <link rel="stylesheet" href="borders.css">
     <link rel="stylesheet" href="../styles/fontello.css">
-    <title>Налаштування</title>
+    <title>Центр управління</title>
 </head>
 <body>
     <header>
-        <h1>Налаштування</h1>
+        <h1>Центр управління</h1>
         <a class="home" href="../index.html"><i class="icon-home"></i></a>
     </header>
 
@@ -45,10 +45,34 @@
     <p class="settings-info" style="text-align: center;">Наразі кольорові позначки доступні не для всіх персонажів. Якщо у персонажа немає власного кольору, він має або сіру позначку, або не має її взагалі. Ця функція ще допрацьовується, тому вона може містити недоліки та помилки.</p>
     </div>
 
+    <div class="container">
+        <h1 class="c">Шрифт на твій вибір!</h1>
+        <div id="fontOptions">
+            <span class="font-option" data-font="'Comic Relief'" style="font-family: 'Comic Relief', system-ui;">[Comic Relief] О, Спектр, доброго ранку!</span>
+            <span class="font-option" data-font="Roboto" style="font-family: Roboto, sans-serif;">[Roboto] О, Спектр, доброго ранку!</span>
+            <span class="font-option" data-font="'Sofia Sans Semi Condensed'" style="font-family: 'Sofia Sans Semi Condensed', sans-serif;">[Sofia Sans] О, Спектр, доброго ранку!</span>
+            <span class="font-option" data-font="Arial" style="font-family: Arial, sans-serif;">[Arial] О, Спектр, доброго ранку!</span>
+        </div>
+    </div>
+
 
     <div class="container">
         <h1 style="text-align: center;">Коментарі розробника</h1>
         <div class="coments">
+            <div class="coment">
+                <div class="version">[2.2.3]</div>
+                <p>З цим Comic Relief, до речі, є одна проблем.. Йому дуже не подобається буква "Ю" (Тут могла б бути вставка, але я промовчу). 
+                    Наприклад, щоб написати в третьому дні слово "Полювання" в header'і(Шапці), мені прийшлося розділяти слово на дві частини (Після "Ю"), 
+                    але на шапці цього не видно (Полазьте в коді якщо не вірите). Здається, така помилка працює тільки на великих шрифтах. Кароче comic - комік, оправдано. 
+                    <span class="infotag" data-type="info"><strong>|Щодо інших нововведень|:</strong> Трішки змінив стилі в різних місцях; Новий JS файл який відповідає за змінення шрифтів та "Нові" діалоги; Змінив місцями іконки (Також пихнув в проект конфіг від фонтело (Мені насрати)); Добавив цей синій контейнер - просто захотів.
+                    <br>Здається, все. Бувайте, любителі хаєжок ◕ω◕. Чотирнадцятий день <strong>буде</strong></span>
+                    <span class="infotag" data-type="good">PS: Там не тільки синій..</span>
+                </p>
+            </div>
+            <div class="coment">
+                <div class="version">[2.2.3]</div>
+                <p>Здарова брателі. Хоча я це пишу сам для себе. Ну, щоденник ніби. <br>Кароче, цьої версії з головного я добавив вибір шрифтів. Досить корисна штука, але шрифти міняються тільки на твір. Всюди решту залишається Comic Relief.</p>
+            </div>
             <div class="coment">
                 <div class="version">[2.2.2]</div>
                 <p>Обов'язковий комент до нової версії. Пофіксив сторінку "Налаштування" (´&gt;᎑&lt;)</p>
@@ -85,14 +109,7 @@
     </div>
 
 
-    <script>
-        const toggle = document.getElementById('toggleCharacters');
-        const saved = localStorage.getItem('useCharacterStyles');
-        toggle.checked = saved === 'true';
-
-        toggle.addEventListener('change', () => {
-            localStorage.setItem('useCharacterStyles', toggle.checked ? 'true' : 'false');
-        });
+    <script src="settings.js">
     </script>
 </body>
 </html>

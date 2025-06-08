@@ -1,3 +1,4 @@
+const poemDiv = document.getElementById('poem');
 const currentPage = window.location.pathname.split("/").pop().split(".")[0];
 console.log('Current page key:', currentPage);
 
@@ -55,7 +56,6 @@ if (!text) {
 }
 
 
-
 function goToNextDay() {
   const current = window.location.pathname;
   const match = current.match(/day(\d+)\.html/);
@@ -69,3 +69,13 @@ function goToNextDay() {
     console.error("Не вдалося визначити номер сторінки 🥲");
   }
 }
+
+
+function applySavedFont() {
+  const savedFont = localStorage.getItem('userFont');
+  if (savedFont) {
+    poemDiv.style.fontFamily = savedFont;
+  }
+}
+
+document.addEventListener('DOMContentLoaded', applySavedFont);
