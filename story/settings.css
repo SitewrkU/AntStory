@@ -182,21 +182,21 @@ header{
         display: flex;
         margin-bottom: 12px;
         font-size: 18px;
-        /* text-align: center; */
         padding: 5px;
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.2);
 
         .version{
-            /* position: absolute; */
             font-size: 15px;
             color: rgba(255, 255, 255, 0.5);
         }
 
         & p{
+            width: 100%;
             margin-left: 10px;
 
             .infotag{
+                margin-right: 5px;
                 margin-top: 5px;
                 padding: 5px;
                 display: block;
@@ -274,8 +274,13 @@ header{
         font-size: 18px;
     }
 
-    .coment{
+    .coments .coment{
+        flex-direction: column;
+        .version{
+            margin: 5px;
+        }
         & p{
+            margin-left: 2px;
             font-size: 16px;
             line-height: 1.6;
         }
